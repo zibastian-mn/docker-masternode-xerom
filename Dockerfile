@@ -14,7 +14,6 @@ RUN mkdir /tmp/xerom && cd /tmp/xerom && rm -fr * \
 	&& wget https://github.com/xero-official/node-deployment-dashboard/raw/master/build/dashboard \
 	&& chmod +x dashboard && mv dashboard /usr/bin && rm -fr /tmp/xerom
 
-ARG usr=xero
 RUN addgroup --gid 900 ${usr} \
 	&& adduser -u 900 --ingroup ${usr} --home /home/${usr} --shell /bin/bash --disabled-password --disabled-login ${usr}
 
