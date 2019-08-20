@@ -21,10 +21,10 @@ RUN addgroup --gid 900 ${usr} \
 COPY ./docker-entrypoint.sh /usr/bin/docker-entrypoint
 RUN chmod +x /usr/bin/docker-entrypoint
 
-COPY ./node-setup /usr/bin/
+COPY ./node-setup.sh /usr/bin/node-setup
 RUN chmod +x /usr/bin/node-setup
 
-COPY ./node-info /usr/bin/
+COPY ./node-info.sh /usr/bin/node-info
 RUN chmod +x /usr/bin/node-info
 
 RUN touch /.nodeType \
