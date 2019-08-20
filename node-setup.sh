@@ -10,7 +10,7 @@ case "$1" in
 	"super")
 		;;
 	*)
-		echo "Usage $0 chain|xero|link| super"
+		echo "Usage $0 chain|xero|link|super"
 		exit 1
 		;;
 esac
